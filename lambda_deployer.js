@@ -18,7 +18,7 @@ exports.handler = function(event, context) {
             },
             FunctionName: functionName,
             Role: "arn:aws:iam::lambda_role", // replace with the actual arn of the execution role you created
-            Runtime: "python2.7", 
+            Runtime: "python2.7", //Runtime environment of the application lambda
             Handler: "lambda_handler"
         };
         lambda.createFunction(params, function(err, data) {
