@@ -14,10 +14,10 @@ def lambda_handler(event, context):
             'Source': 'Lambda Publish',
             'Resources': [
              ],
-            'DetailType': 'Sema4 Demo',
+            'DetailType': 'EB Demo',
             'Detail': json.dumps(event),
-            'EventBusName': 'arn:aws:events:us-west-2:123456789012:event-bus/sema4eventbus',
-            'TraceHeader': 'testdemoSema4'
+            'EventBusName': 'arn:aws:events:us-west-2:123456789012:event-bus/eventbus',
+            'TraceHeader': 'testdemo'
              },
                 ]
              )
